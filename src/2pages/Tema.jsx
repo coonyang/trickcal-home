@@ -16,7 +16,6 @@ export default function Tema() {
       (_, i) => `/img/right3-${String(i + 1).padStart(2, "0")}.png`
     ),
   };
-
   const [activeTab, setActiveTab] = useState(1);
   const [isOpen, setIsOpen] = useState(false);
   const [index, setIndex] = useState(1);
@@ -44,21 +43,9 @@ export default function Tema() {
         <div className="right">
           <img src={tabImg}></img>
           <ul className="tab">
-            <li
-              onClick={() => {
-                changeTab(0);
-              }}
-            ></li>
-            <li
-              onClick={() => {
-                changeTab(1);
-              }}
-            ></li>
-            <li
-              onClick={() => {
-                changeTab(2);
-              }}
-            ></li>
+            {Array.from({ length: 3 }).map((_, idx) => (
+              <li key={idx} onClick={() => changeTab(idx)}></li>
+            ))}
           </ul>
           <div className="imgs">
             {tabRightImages[activeTab].map((src, idx) => {

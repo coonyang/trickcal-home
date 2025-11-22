@@ -17,20 +17,20 @@ export default function Tema() {
     ),
   };
 
-  const [tabImg, setTabImg] = useState(`/img/theater-tab-01.png`);
   const [activeTab, setActiveTab] = useState(1);
   const [isOpen, setIsOpen] = useState(false);
   const [index, setIndex] = useState(1);
   const mainImg = `/img/left${
     activeTab === 1 ? "" : `${activeTab.toString()}-`
   }${index.toString().padStart(2, "0")}.png`;
+  const tabImg = `/img/theater-tab-${activeTab
+    .toString()
+    .padStart(2, "0")}.png`;
 
   const changeImg = (index) => {
     setIndex(index + 1);
   };
   const changeTab = (index) => {
-    const num = String(index + 1).padStart(2, "0");
-    setTabImg(`/img/theater-tab-${num}.png`);
     setIndex(1);
     setActiveTab(index + 1);
   };

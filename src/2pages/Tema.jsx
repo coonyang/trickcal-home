@@ -17,33 +17,21 @@ export default function Tema() {
     ),
   };
 
-  const tabLeftImages = {
-    1: Array.from(
-      { length: 32 },
-      (_, i) => `/img/left${String(i + 1).padStart(2, "0")}.png`
-    ),
-    2: Array.from(
-      { length: 15 },
-      (_, i) => `/img/left2-${String(i + 1).padStart(2, "0")}.png`
-    ),
-    3: Array.from(
-      { length: 10 },
-      (_, i) => `/img/left3-${String(i + 1).padStart(2, "0")}.png`
-    ),
-  };
-
-  const [mainImg, setMainImg] = useState(`/img/left01.png`);
   const [tabImg, setTabImg] = useState(`/img/theater-tab-01.png`);
   const [activeTab, setActiveTab] = useState(1);
   const [isOpen, setIsOpen] = useState(false);
+  const [index, setIndex] = useState(1);
+  const mainImg = `/img/left${
+    activeTab === 1 ? "" : `${activeTab.toString()}-`
+  }${index.toString().padStart(2, "0")}.png`;
 
   const changeImg = (index) => {
-    setMainImg(tabLeftImages[activeTab][index]);
+    setIndex(index + 1);
   };
   const changeTab = (index) => {
     const num = String(index + 1).padStart(2, "0");
     setTabImg(`/img/theater-tab-${num}.png`);
-    setMainImg(tabLeftImages[index + 1][0]);
+    setIndex(1);
     setActiveTab(index + 1);
   };
 

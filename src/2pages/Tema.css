@@ -119,3 +119,10 @@ li {
   left: 50%;
   transform: translateX(-50%);
 }
+#youtubePlayer {
+  position: absolute;
+  top: 15%;
+  left: 20%;
+  width: 60%;
+  height: 60%;
+}

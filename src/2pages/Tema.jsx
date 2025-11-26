@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./Tema.css";
+import youtubeIds from "../data/youtubeIds";
 
 export default function Tema() {
   const tabRightImages = {
@@ -19,6 +20,10 @@ export default function Tema() {
   const [activeTab, setActiveTab] = useState(1);
   const [isOpen, setIsOpen] = useState(false);
   const [index, setIndex] = useState(1);
+  const [videoUrl, setVideoUrl] = useState(
+    "https://www.youtube.com/embed/sr2P3zjFLsQ"
+  );
+
   const mainImg = `/img/left${
     activeTab === 1 ? "" : `${activeTab.toString()}-`
   }${index.toString().padStart(2, "0")}.png`;
@@ -28,6 +33,9 @@ export default function Tema() {
 
   const changeImg = (index) => {
     setIndex(index + 1);
+
+    const youtubeId = youtubeIds[activeTab][index];
+    setVideoUrl(`https://www.youtube.com/embed/${youtubeId}`);
   };
   const changeTab = (index) => {
     setIndex(1);
@@ -65,6 +73,13 @@ export default function Tema() {
               onClick={() => setIsOpen(false)}
               src="/img/theater-popup-close.png"
             ></img>
+            <iframe
+              id="youtubePlayer"
+              src={videoUrl}
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
           </div>
         </div>
       )}

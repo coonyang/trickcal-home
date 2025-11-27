@@ -37,9 +37,12 @@ export default function Tema() {
     const youtubeId = youtubeIds[activeTab][index];
     setVideoUrl(`https://www.youtube.com/embed/${youtubeId}`);
   };
-  const changeTab = (index) => {
+  const changeTab = (tabIndex) => {
+    const newTab = tabIndex + 1;
     setIndex(1);
-    setActiveTab(index + 1);
+    setActiveTab(newTab);
+    const firstYoutubeId = youtubeIds[newTab][0];
+    setVideoUrl(`https://www.youtube.com/embed/${firstYoutubeId}`);
   };
 
   return (

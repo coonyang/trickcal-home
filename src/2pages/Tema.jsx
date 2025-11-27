@@ -9,11 +9,11 @@ export default function Tema() {
       (_, i) => `/img/right${String(i + 1).padStart(2, "0")}.png`
     ),
     2: Array.from(
-      { length: 10 },
+      { length: 4 },
       (_, i) => `/img/right2-${String(i + 1).padStart(2, "0")}.png`
     ),
     3: Array.from(
-      { length: 8 },
+      { length: 2 },
       (_, i) => `/img/right3-${String(i + 1).padStart(2, "0")}.png`
     ),
   };

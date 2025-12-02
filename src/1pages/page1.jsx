@@ -1,15 +1,15 @@
-import "./Home.css";
+import "./page1.css";
 
-export default function Home({ nextPage }) {
+export default function Page1({ nextPage }) {
   return (
     <div
       className="main-bg"
-      style={{ backgroundImage: `url("/img/main-bg.jpg")` }}
+      style={{ backgroundImage: `url("/img/1page/main-bg.jpg")` }}
     >
       <div className="content">
         <img
           className="main-logo"
-          src="/img/main-logo.png"
+          src="/img/1page/main-logo.png"
           alt="mainLogo"
         ></img>
         <a
@@ -26,7 +26,7 @@ export default function Home({ nextPage }) {
 
       <img
         className="scroll"
-        src="/img/main-scroll.png"
+        src="/img/1page/main-scroll.png"
         alt="scroll"
         onClick={nextPage}
       ></img>

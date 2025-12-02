@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import fullpage from "fullpage.js";
 import "fullpage.js/dist/fullpage.min.css";
 import "./App.css";
-import Home from "./1pages/Home";
-import Tema from "./2pages/Tema";
+import Page1 from "./1pages/page1";
+import Page2 from "./2pages/page2";
 import LoadingScreen from "./components/LoadingScreen";
 
 function App() {
@@ -38,10 +38,10 @@ function App() {
     <>
       <div id="fullpage">
         <div className="section">
-          <Home nextPage={nextPage}></Home>
+          <Page1 nextPage={nextPage}></Page1>
         </div>
         <div className="section">
-          <Tema></Tema>
+          <Page2></Page2>
         </div>
         <div className="section">
           <h1>Section 3</h1>

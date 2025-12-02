@@ -4,6 +4,7 @@ import "fullpage.js/dist/fullpage.min.css";
 import "./App.css";
 import Page1 from "./1pages/page1";
 import Page2 from "./2pages/page2";
+import Page3 from "./3pages/page3";
 import LoadingScreen from "./components/LoadingScreen";
 
 function App() {
@@ -44,7 +45,7 @@ function App() {
           <Page2></Page2>
         </div>
         <div className="section">
-          <h1>Section 3</h1>
+          <Page3></Page3>
         </div>
         <div className="section">
           <h1>Section 4</h1>

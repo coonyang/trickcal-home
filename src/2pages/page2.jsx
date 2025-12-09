@@ -81,7 +81,7 @@ export default function Page2() {
   }, [isOpen]);
 
   return (
-    <div className="main-bg">
+    <div className="main-bg2">
       <div className="main-theater">
         <a className="left" onClick={() => setIsOpen(true)}>
           <img src={mainImg} />

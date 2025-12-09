@@ -1,4 +1,4 @@
-.main-bg {
+.main-bg3 {
   height: 100vh;
   width: 100vw;
   background: url("/img/3page/worldview-bg.jpg") center/cover no-repeat;
@@ -13,17 +13,17 @@
   align-items: center;
   flex-direction: column;
   position: absolute;
-  top: 5%;
+  top: 10%;
   left: 50%;
   transform: translateX(-50%);
-  max-width: 50vw;
-  gap: 10px;
+  width: 60%;
+  gap: 20px;
 }
 .story img {
   width: 100%;
 }
 .story a {
-  width: 80%;
+  width: 50%;
   cursor: pointer;
 }
 .char {
@@ -38,4 +38,23 @@
 }
 .char img {
   width: 100%;
+}
+.popup-bg {
+  position: fixed;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.popup-inner {
+  position: relative;
+  width: 60%;
+  aspect-ratio: 16/9;
+  background-image: url("/img/3page/worldview-popup.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }

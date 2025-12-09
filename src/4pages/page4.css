@@ -1,3 +1,9 @@
+ul,
+ol,
+li {
+  list-style: none;
+}
+
 .main-bg4 {
   height: 100vh;
   width: 100vw;
@@ -5,4 +11,28 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+.char-list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 70%;
+}
+.list-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+.list-img li img {
+  width: 100%;
+  cursor: pointer;
 }

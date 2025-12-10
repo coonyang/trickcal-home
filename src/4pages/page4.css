@@ -2,6 +2,8 @@ ul,
 ol,
 li {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .main-bg4 {
@@ -35,4 +37,74 @@ li {
 .list-img li img {
   width: 100%;
   cursor: pointer;
+}
+.view {
+  z-index: 50;
+  width: 80%;
+  position: relative;
+}
+
+.view li img {
+  display: block;
+  width: 100%;
+}
+.sound {
+  position: absolute;
+  top: 8%;
+  left: 8%;
+  width: 5.6%;
+  height: 9.4%;
+  cursor: pointer;
+}
+.change {
+  position: absolute;
+  top: 8%;
+  left: 13.7%;
+  width: 5.6%;
+  height: 9.4%;
+  cursor: pointer;
+}
+.view-tab {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 7.5%;
+  left: 26.4%;
+  width: 19%;
+  height: 10.5%;
+}
+.view-tab li {
+  flex: 1;
+  height: 100%;
+  cursor: pointer;
+}
+.view-close {
+  position: absolute;
+  bottom: 0.2%;
+  left: 0.2%;
+  width: 12.5%;
+  height: 11%;
+  cursor: pointer;
+  border: none;
+  background: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
+.view-close:focus {
+  outline: none;
+}
+.view-mark {
+  position: absolute;
+  top: 9.2%;
+  right: 0%;
+  width: 7.5%;
+  height: 70%;
+  gap: 2%;
+  display: flex;
+  flex-direction: column;
+}
+.view-mark li {
+  width: 100%;
+  flex: 1;
 }

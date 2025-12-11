@@ -69,7 +69,7 @@ li {
   align-items: center;
   position: absolute;
   top: 7.5%;
-  left: 26.4%;
+  right: 54.7%;
   width: 19%;
   height: 10.5%;
 }
@@ -103,6 +103,7 @@ li {
   gap: 2%;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 }
 .view-mark li {
   width: 100%;

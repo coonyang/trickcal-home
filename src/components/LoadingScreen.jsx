@@ -3,19 +3,20 @@ import "./LoadingScreen.css";
 
 export default function Loading({ onFinish }) {
   const [progress, setProgress] = useState(0);
-  const Step = 10;
+  const [fadeOut, setFadeOut] = useState(false);
 
   useEffect(() => {
     const timer = setInterval(() => {
       setProgress((prev) => {
         if (prev >= 100) {
           clearInterval(timer);
-          setTimeout(() => onFinish(), 500);
+          setFadeOut(true);
+          setTimeout(() => onFinish(), 300);
           return 100;
         }
-        return prev + 1.5;
+        return prev + 5;
       });
-    }, 40);
+    }, 200);
     return () => clearInterval(timer);
   }, [onFinish]);
 
@@ -34,7 +35,7 @@ export default function Loading({ onFinish }) {
   }, [progress]);
 
   return (
-    <div className="loading-container">
+    <div className={`loading-container ${fadeOut ? "fade-out" : ""}`}>
       <div className="loading-logo">
         <img src="/img/loading-logo.png"></img>
       </div>

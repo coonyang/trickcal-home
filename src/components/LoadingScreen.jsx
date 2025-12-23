@@ -35,40 +35,42 @@ export default function Loading({ onFinish }) {
   }, [progress]);
 
   return (
-    <div className={`loading-container ${fadeOut ? "fade-out" : ""}`}>
-      <div className="loading-logo">
-        <img src="/img/loading-logo.png"></img>
-      </div>
-      <div className="loading-bar">
-        <div className="loading-bar-img">
-          <div
-            className="loading-progress"
-            style={{ width: `${progress}%` }}
-          ></div>
+    <div className={`main-loading  ${fadeOut ? "fade-out" : ""}`}>
+      <div className="loading-container">
+        <div className="loading-logo">
+          <img src="/img/loading-logo.png"></img>
         </div>
-        <img
-          src="/img/loading-bar-chr01.png"
-          className="loading-indicator1"
-        ></img>
-        <img
-          src="/img/loading-bar-chr02.png"
-          className="loading-indicator2"
-          style={{ left: `${progress}%` }}
-        ></img>
-      </div>
-      <div className="text">
-        {[1, 2, 3, 4, 5, 6].map((n) => (
+        <div className="loading-bar">
+          <div className="loading-bar-img">
+            <div
+              className="loading-progress"
+              style={{ width: `${progress}%` }}
+            ></div>
+          </div>
           <img
-            key={n}
-            src={`/img/loading-text0${n}.png`}
-            className={`fade-text text0${n}`}
-            alt={`text${n}`}
+            src="/img/loading-bar-chr01.png"
+            className="loading-indicator1"
           ></img>
-        ))}
-      </div>
+          <img
+            src="/img/loading-bar-chr02.png"
+            className="loading-indicator2"
+            style={{ left: `${progress}%` }}
+          ></img>
+        </div>
+        <div className="text">
+          {[1, 2, 3, 4, 5, 6].map((n) => (
+            <img
+              key={n}
+              src={`/img/loading-text0${n}.png`}
+              className={`fade-text text0${n}`}
+              alt={`text${n}`}
+            ></img>
+          ))}
+        </div>
 
-      <div className="loading-copyright">
-        <img src="/img/loading-copyright.png"></img>
+        <div className="loading-copyright">
+          <img src="/img/loading-copyright.png"></img>
+        </div>
       </div>
     </div>
   );

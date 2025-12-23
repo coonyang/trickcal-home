@@ -1,3 +1,16 @@
+.main-loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-image: url("/img/loading-bg.jpg");
+  width: 100vw;
+  height: 100vh;
+  background-size: 100% 100%;
+  opacity: 1;
+  transition: opacity 1s;
+  z-index: 9999;
+}
+
 .loading-container {
   position: relative;
   display: flex;
@@ -9,10 +22,8 @@
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 1;
-  transition: opacity 1s ease;
 }
-.loading-container.fade-out {
+.main-loading.fade-out {
   opacity: 0;
 }
 .loading-logo {

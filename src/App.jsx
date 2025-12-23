@@ -6,6 +6,7 @@ import Page1 from "./1pages/page1";
 import Page2 from "./2pages/page2";
 import Page3 from "./3pages/page3";
 import Page4 from "./4pages/page4";
+import Page5 from "./5pages/page5";
 import LoadingScreen from "./components/LoadingScreen";
 
 function App() {
@@ -52,7 +53,7 @@ function App() {
           <Page4></Page4>
         </div>
         <div className="section">
-          <h1>Section 5</h1>
+          <Page5></Page5>
         </div>
       </div>
 

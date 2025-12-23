@@ -3,6 +3,7 @@ import "./LoadingScreen.css";
 
 export default function Loading({ onFinish }) {
   const [progress, setProgress] = useState(0);
+  const Step = 10;
 
   useEffect(() => {
     const timer = setInterval(() => {

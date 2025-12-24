@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./page5.css";
 export default function Page5() {
   const [activeTab, setActiveTab] = useState(0);
+  const [activeTab2, setActiveTab2] = useState(0);
 
   return (
     <div className="main-bg5">
@@ -32,7 +33,26 @@ export default function Page5() {
             <li>
               <img src="/img/5page/media-merch-bg.png"></img>
               <ol>
-                <li></li>
+                <li>
+                  <img
+                    src={
+                      activeTab2 === 0
+                        ? "/img/5page/media-merch-tab01-on.png"
+                        : "/img/5page/media-merch-tab01-off.png"
+                    }
+                  ></img>
+                </li>
+              </ol>
+              <ol>
+                <li>
+                  <img
+                    src={
+                      activeTab2 === 1
+                        ? "/img/5page/media-merch-tab02-on.png"
+                        : "/img/5page/media-merch-tab02-off.png"
+                    }
+                  ></img>
+                </li>
               </ol>
             </li>
           )}

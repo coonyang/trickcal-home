@@ -32,8 +32,12 @@ export default function Page5() {
           {activeTab === 1 && (
             <li>
               <img src="/img/5page/media-merch-bg.png"></img>
-              <ol>
-                <li>
+              <ol className="inner-tab">
+                <li
+                  onClick={() => {
+                    setActiveTab2(0);
+                  }}
+                >
                   <img
                     src={
                       activeTab2 === 0
@@ -42,9 +46,11 @@ export default function Page5() {
                     }
                   ></img>
                 </li>
-              </ol>
-              <ol>
-                <li>
+                <li
+                  onClick={() => {
+                    setActiveTab2(1);
+                  }}
+                >
                   <img
                     src={
                       activeTab2 === 1

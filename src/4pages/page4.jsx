@@ -1,5 +1,7 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import "./page4.css";
+import characterVoiceMap from "../data/characterVoiceMap";
+
 export default function Page4() {
   const [isOpen, setIsOpen] = useState(false);
   const [viewImg, setViewImg] = useState(1);
@@ -23,6 +25,15 @@ export default function Page4() {
     7: 4,
   };
 
+  const audioRef = useRef(null);
+  const tabKey = `${String(viewImg).padStart(2, "0")}-${String(
+    viewImgTab
+  ).padStart(2, "0")}`;
+  const voiceList = characterVoiceMap[tabKey];
+
+  const soundSrc =
+    voiceList && voiceList.length > 0 ? `/sound/${voiceList[0]}` : null;
+
   useEffect(() => {
     const img = new Image();
     img.src = skinImg;
@@ -30,6 +41,19 @@ export default function Page4() {
     img.onload = () => setHasSkin(true);
     img.onerror = () => setHasSkin(false);
   }, [viewImg, viewImgTab]);
+
+  useEffect(() => {
+    if (!soundSrc) return;
+
+    audioRef.current = new Audio(soundSrc);
+
+    return () => {
+      if (audioRef.current) {
+        audioRef.current.pause();
+        audioRef.current = null;
+      }
+    };
+  }, [soundSrc]);
 
   return (
     <div className="main-bg4">
@@ -61,7 +85,15 @@ export default function Page4() {
           <ul>
             <li>
               <img src={showImg}></img>
-              <a className="sound"></a>
+              <a
+                className="sound"
+                onClick={() => {
+                  if (!audioRef.current) return;
+                  audioRef.current.currentTime = 0;
+                  audioRef.current.play();
+                }}
+              ></a>
+
               {hasSkin && (
                 <a
                   className="change"

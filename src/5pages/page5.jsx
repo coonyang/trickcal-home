@@ -3,6 +3,8 @@ import "./page5.css";
 export default function Page5() {
   const [activeTab, setActiveTab] = useState(0);
   const [activeTab2, setActiveTab2] = useState(0);
+  const merchGroups = [7, 8];
+  const deviceTypes = ["PC", "iPhone", "Galaxy", "Watch"];
 
   return (
     <div className="main-bg5">
@@ -32,7 +34,7 @@ export default function Page5() {
           {activeTab === 1 && (
             <li>
               <img src="/img/5page/media-merch-bg.png"></img>
-              <ol className="inner-tab">
+              <ol className="inner-tab1">
                 <li
                   onClick={() => {
                     setActiveTab2(0);
@@ -59,6 +61,39 @@ export default function Page5() {
                     }
                   ></img>
                 </li>
+              </ol>
+              <ol className="inner-tab-cont">
+                {Array.from({ length: merchGroups[activeTab2] }).map((a, i) => {
+                  const groupStr = String(activeTab2 + 1).padStart(2, "0");
+                  const itemStr = String(i + 1).padStart(2, "0");
+                  return (
+                    <li className="inner-tab2" key={`${groupStr}-${itemStr}`}>
+                      <div className="inner-tab2-img">
+                        <img
+                          src={`/img/5page/merch${groupStr}-${itemStr}.png`}
+                        ></img>
+                      </div>
+                      <div className="tab2-buttons">
+                        {deviceTypes.map((type, idx) => (
+                          <div>
+                            <a
+                              key={type}
+                              href={`/img/5page/Goods-${groupStr}-${type}-${itemStr}.jpg`}
+                              download
+                            >
+                              <img
+                                src={`/img/5page/media-merch-btn-0${
+                                  idx + 1
+                                }.png`}
+                                alt="type"
+                              ></img>
+                            </a>
+                          </div>
+                        ))}
+                      </div>
+                    </li>
+                  );
+                })}
               </ol>
             </li>
           )}

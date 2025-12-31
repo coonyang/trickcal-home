@@ -5,7 +5,7 @@ import youtubeIds from "../data/youtubeIds";
 export default function Page2() {
   const tabRightImages = {
     1: Array.from(
-      { length: 32 },
+      { length: 52 },
       (_, i) => `/img/2page/right${String(i + 1).padStart(2, "0")}.png`
     ),
     2: Array.from(

@@ -5,6 +5,16 @@ export default function Page5() {
   const [activeTab2, setActiveTab2] = useState(0);
   const merchGroups = [7, 8];
   const deviceTypes = ["PC", "iPhone", "Galaxy", "Watch"];
+  const goodsExtByItem = {
+    "01": "jpg",
+    "02": "png",
+    "03": "jpg",
+    "04": "jpg",
+    "05": "jpg",
+    "06": "jpg",
+    "07": "jpg",
+    "08": "png",
+  };
 
   return (
     <div className="main-bg5">
@@ -78,7 +88,7 @@ export default function Page5() {
                           <div>
                             <a
                               key={type}
-                              href={`/img/5page/Goods-${groupStr}-${type}-${itemStr}.jpg`}
+                              href={`/img/5page/Goods-${groupStr}-${type}-${itemStr}.${goodsExtByItem[itemStr]}`}
                               download
                             >
                               <img

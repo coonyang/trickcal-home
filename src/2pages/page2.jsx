@@ -107,12 +107,12 @@ export default function Page2() {
           <div className="popup-inner">
             <img
               className="popup-top"
-              src="/trickcal-home/img/2page/theater-popup-top.png"
+              src="img/2page/theater-popup-top.png"
             ></img>
             <img
               className="popup-close"
               onClick={() => setIsOpen(false)}
-              src="/trickcal-home/img/2page/theater-popup-close.png"
+              src="img/2page/theater-popup-close.png"
             ></img>
             <iframe
               id="youtubePlayer"

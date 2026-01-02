@@ -59,7 +59,7 @@ function App() {
 
       <button className="mainBtn" onClick={openMenu}>
         <img
-          src="/trickcal-home/img/nav-button.png"
+          src="img/nav-button.png"
           alt="버튼이미지"
           style={{ width: "60px", height: "60px", display: "block" }}
         ></img>
@@ -71,7 +71,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src="/trickcal-home/img/nav-sns01.png" alt="youtube"></img>
+          <img src="img/nav-sns01.png" alt="youtube"></img>
         </a>
         <a
           className="nav-sns"
@@ -79,7 +79,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src="/trickcal-home/img/nav-sns02.png" alt="youtube"></img>
+          <img src="img/nav-sns02.png" alt="youtube"></img>
         </a>
         <a
           className="nav-sns"
@@ -87,7 +87,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src="/trickcal-home/img/nav-sns03.png" alt="youtube"></img>
+          <img src="img/nav-sns03.png" alt="youtube"></img>
         </a>
         <a
           className="nav-sns"
@@ -95,7 +95,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src="/trickcal-home/img/nav-sns04.png" alt="youtube"></img>
+          <img src="img/nav-sns04.png" alt="youtube"></img>
         </a>
       </div>
 
@@ -105,7 +105,7 @@ function App() {
       >
         <button className="closeBtn" onClick={closeMenu}>
           <img
-            src="/trickcal-home/img/nav-close.png"
+            src="img/nav-close.png"
             style={{ width: "60px", height: "60px", display: "block" }}
           ></img>
         </button>

@@ -22,7 +22,7 @@ export default function Page5() {
         <ul>
           {activeTab === 0 && (
             <li>
-              <img src="/trickcal-home/img/5page/media-paper-bg.png"></img>
+              <img src="img/5page/media-paper-bg.png"></img>
               <ol className="tab01-content">
                 {Array.from({ length: 15 }).map((_, idx) => {
                   const fileIdx = String(idx + 1).padStart(2, "0");
@@ -33,7 +33,7 @@ export default function Page5() {
                         href={`/img/5page/wallpaper-${fileIdx}.png`}
                         download={`wallpaper-${fileIdx}.png`}
                       >
-                        <img src="/trickcal-home/img/5page/media-paper-btn.png"></img>
+                        <img src="img/5page/media-paper-btn.png"></img>
                       </a>
                     </li>
                   );
@@ -43,7 +43,7 @@ export default function Page5() {
           )}
           {activeTab === 1 && (
             <li>
-              <img src="/trickcal-home/img/5page/media-merch-bg.png"></img>
+              <img src="img/5page/media-merch-bg.png"></img>
               <ol className="inner-tab1">
                 <li
                   onClick={() => {
@@ -112,7 +112,7 @@ export default function Page5() {
           <li onClick={() => setActiveTab(0)}></li>
           <li onClick={() => setActiveTab(1)}></li>
         </ul>
-        <img src="/trickcal-home/img/5page/media-text.png"></img>
+        <img src="img/5page/media-text.png"></img>
       </div>
     </div>
   );

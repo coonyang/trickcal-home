@@ -8,7 +8,7 @@ export default function Page4() {
   const [viewImgTab, setViewImgTab] = useState(1);
   const [isSkin, setIsSkin] = useState(false);
   const [hasSkin, setHasSkin] = useState(false);
-  const baseImg = `/img/4page/character-${viewImg
+  const baseImg = `img/4page/character-${viewImg
     .toString()
     .padStart(2, "0")}-${viewImgTab.toString().padStart(2, "0")}`;
 
@@ -70,7 +70,7 @@ export default function Page4() {
               }}
             >
               <img
-                src={`/img/4page/character-${String(i + 1).padStart(
+                src={`img/4page/character-${String(i + 1).padStart(
                   2,
                   "0"
                 )}.png`}

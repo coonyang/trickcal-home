@@ -62,7 +62,7 @@ export default function Loading({ onFinish }) {
             {[1, 2, 3, 4, 5, 6].map((n) => (
               <img
                 key={n}
-                src={`/img/loading-text0${n}.png`}
+                src={`img/loading-text0${n}.png`}
                 className={`fade-text text0${n}`}
                 alt={`text${n}`}
               ></img>

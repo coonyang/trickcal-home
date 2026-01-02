@@ -6,15 +6,15 @@ export default function Page2() {
   const tabRightImages = {
     1: Array.from(
       { length: 52 },
-      (_, i) => `/img/2page/right${String(i + 1).padStart(2, "0")}.png`
+      (_, i) => `img/2page/right${String(i + 1).padStart(2, "0")}.png`
     ),
     2: Array.from(
       { length: 4 },
-      (_, i) => `/img/2page/right2-${String(i + 1).padStart(2, "0")}.png`
+      (_, i) => `img/2page/right2-${String(i + 1).padStart(2, "0")}.png`
     ),
     3: Array.from(
       { length: 2 },
-      (_, i) => `/img/2page/right3-${String(i + 1).padStart(2, "0")}.png`
+      (_, i) => `img/2page/right3-${String(i + 1).padStart(2, "0")}.png`
     ),
   };
   const [activeTab, setActiveTab] = useState(1);
@@ -24,10 +24,10 @@ export default function Page2() {
     "https://www.youtube.com/embed/sr2P3zjFLsQ"
   );
 
-  const mainImg = `/img/2page/left${
+  const mainImg = `img/2page/left${
     activeTab === 1 ? "" : `${activeTab.toString()}-`
   }${index.toString().padStart(2, "0")}.png`;
-  const tabImg = `/img/2page/theater-tab-${activeTab
+  const tabImg = `img/2page/theater-tab-${activeTab
     .toString()
     .padStart(2, "0")}.png`;
 

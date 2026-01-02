@@ -28,9 +28,9 @@ export default function Page5() {
                   const fileIdx = String(idx + 1).padStart(2, "0");
                   return (
                     <li>
-                      <img src={`/img/5page/wallpaper-${fileIdx}.png`}></img>
+                      <img src={`img/5page/wallpaper-${fileIdx}.png`}></img>
                       <a
-                        href={`/img/5page/wallpaper-${fileIdx}.png`}
+                        href={`img/5page/wallpaper-${fileIdx}.png`}
                         download={`wallpaper-${fileIdx}.png`}
                       >
                         <img src="img/5page/media-paper-btn.png"></img>
@@ -80,7 +80,7 @@ export default function Page5() {
                     <li className="inner-tab2" key={`${groupStr}-${itemStr}`}>
                       <div className="inner-tab2-img">
                         <img
-                          src={`/img/5page/merch${groupStr}-${itemStr}.png`}
+                          src={`img/5page/merch${groupStr}-${itemStr}.png`}
                         ></img>
                       </div>
                       <div className="tab2-buttons">
@@ -88,11 +88,11 @@ export default function Page5() {
                           <div>
                             <a
                               key={type}
-                              href={`/img/5page/Goods-${groupStr}-${type}-${itemStr}.${goodsExtByItem[itemStr]}`}
+                              href={`img/5page/Goods-${groupStr}-${type}-${itemStr}.${goodsExtByItem[itemStr]}`}
                               download
                             >
                               <img
-                                src={`/img/5page/media-merch-btn-0${
+                                src={`img/5page/media-merch-btn-0${
                                   idx + 1
                                 }.png`}
                                 alt="type"

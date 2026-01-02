@@ -101,7 +101,7 @@ function App() {
 
       <div
         className={`sidebar ${menuOpen ? "open" : ""}`}
-        style={{ backgroundImage: "url(/img/nav.png)" }}
+        style={{ backgroundImage: "url(img/nav.png)" }}
       >
         <button className="closeBtn" onClick={closeMenu}>
           <img

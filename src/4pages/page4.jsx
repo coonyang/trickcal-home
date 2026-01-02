@@ -32,7 +32,7 @@ export default function Page4() {
   const voiceList = characterVoiceMap[tabKey];
 
   const soundSrc =
-    voiceList && voiceList.length > 0 ? `/sound/${voiceList[0]}` : null;
+    voiceList && voiceList.length > 0 ? `sound/${voiceList[0]}` : null;
 
   useEffect(() => {
     const img = new Image();

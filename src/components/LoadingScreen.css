@@ -1,7 +1,7 @@
 .fake {
   height: 100vh;
   width: 100vw;
-  background: url("/img/1page/main-bg.jpg") center/cover no-repeat;
+  background: url("img/1page/main-bg.jpg") center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,7 +10,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-image: url("/img/loading-bg.jpg");
+  background-image: url("img/loading-bg.jpg");
   width: 100vw;
   height: 100vh;
   background-size: 100% 100%;
@@ -26,7 +26,7 @@
   align-items: center;
   width: 100vw;
   height: 100vh;
-  background-image: url("/img/loading-bg-mask.png");
+  background-image: url("img/loading-bg-mask.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;

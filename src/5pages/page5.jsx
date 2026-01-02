@@ -53,8 +53,8 @@ export default function Page5() {
                   <img
                     src={
                       activeTab2 === 0
-                        ? "/img/5page/media-merch-tab01-on.png"
-                        : "/img/5page/media-merch-tab01-off.png"
+                        ? "img/5page/media-merch-tab01-on.png"
+                        : "img/5page/media-merch-tab01-off.png"
                     }
                   ></img>
                 </li>
@@ -66,8 +66,8 @@ export default function Page5() {
                   <img
                     src={
                       activeTab2 === 1
-                        ? "/img/5page/media-merch-tab02-on.png"
-                        : "/img/5page/media-merch-tab02-off.png"
+                        ? "img/5page/media-merch-tab02-on.png"
+                        : "img/5page/media-merch-tab02-off.png"
                     }
                   ></img>
                 </li>

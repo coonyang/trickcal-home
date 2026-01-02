@@ -9,7 +9,7 @@ li {
 .main-bg4 {
   height: 100vh;
   width: 100vw;
-  background: url("/img/4page/character-bg.jpg") center/cover no-repeat;
+  background: url("img/4page/character-bg.jpg") center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;

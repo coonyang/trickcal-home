@@ -39,7 +39,7 @@ export default function Loading({ onFinish }) {
       <div className={`main-loading  ${fadeOut ? "fade-out" : ""}`}>
         <div className="loading-container">
           <div className="loading-logo">
-            <img src="/trickacl-home/img/loading-logo.png"></img>
+            <img src="/trickcal-home/img/loading-logo.png"></img>
           </div>
           <div className="loading-bar">
             <div className="loading-bar-img">
@@ -49,11 +49,11 @@ export default function Loading({ onFinish }) {
               ></div>
             </div>
             <img
-              src="/trickacl-home/img/loading-bar-chr01.png"
+              src="/trickcal-home/img/loading-bar-chr01.png"
               className="loading-indicator1"
             ></img>
             <img
-              src="/trickacl-home/img/loading-bar-chr02.png"
+              src="/trickcal-home/img/loading-bar-chr02.png"
               className="loading-indicator2"
               style={{ left: `${progress}%` }}
             ></img>
@@ -70,7 +70,7 @@ export default function Loading({ onFinish }) {
           </div>
 
           <div className="loading-copyright">
-            <img src="/trickacl-home/img/loading-copyright.png"></img>
+            <img src="/trickcal-home/img/loading-copyright.png"></img>
           </div>
         </div>
       </div>

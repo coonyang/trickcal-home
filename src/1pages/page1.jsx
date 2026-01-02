@@ -9,7 +9,7 @@ export default function Page1({ nextPage }) {
       <div className="content">
         <img
           className="main-logo"
-          src="/trickacl-home/img/1page/main-logo.png"
+          src="/trickcal-home/img/1page/main-logo.png"
           alt="mainLogo"
         ></img>
         <a
@@ -26,7 +26,7 @@ export default function Page1({ nextPage }) {
 
       <img
         className="scroll"
-        src="/trickacl-home/img/1page/main-scroll.png"
+        src="/trickcal-home/img/1page/main-scroll.png"
         alt="scroll"
         onClick={nextPage}
       ></img>

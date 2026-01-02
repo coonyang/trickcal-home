@@ -2,10 +2,7 @@ import "./page1.css";
 
 export default function Page1({ nextPage }) {
   return (
-    <div
-      className="main-bg1"
-      style={{ backgroundImage: `url("img/1page/main-bg.jpg")` }}
-    >
+    <div className="main-bg1">
       <div className="content">
         <img
           className="main-logo"

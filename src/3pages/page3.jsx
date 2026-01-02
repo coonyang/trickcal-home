@@ -42,17 +42,17 @@ export default function Page3() {
   return (
     <div className="main-bg3">
       <div className="story">
-        <img src="/img/3page/worldview-story.png"></img>
+        <img src="/trickacl-home/img/3page/worldview-story.png"></img>
         <a
           onClick={() => {
             setIsOpen(true);
           }}
         >
-          <img src="/img/3page/worldview-video.png"></img>
+          <img src="/trickacl-home/img/3page/worldview-video.png"></img>
         </a>
       </div>
       <div className="char">
-        <img src="/img/3page/worldview-char.png"></img>
+        <img src="/trickacl-home/img/3page/worldview-char.png"></img>
       </div>
       {isOpen && (
         <div className="popup-bg" onClick={() => setIsOpen(false)}>

@@ -78,7 +78,7 @@ export default function Page4() {
             </li>
           ))}
         </ul>
-        <img src="/img/4page/character-text.png"></img>
+        <img src="/trickacl-home/img/4page/character-text.png"></img>
       </div>
       {isOpen && (
         <div className="view">

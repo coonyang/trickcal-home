@@ -1,7 +1,7 @@
 .main-bg3 {
   height: 100vh;
   width: 100vw;
-  background: url("img/3page/worldview-bg.jpg") center/cover no-repeat;
+  background: url("/img/3page/worldview-bg.jpg") center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,7 +53,7 @@
   position: relative;
   width: 60%;
   aspect-ratio: 16/9;
-  background-image: url("img/3page/worldview-popup.png");
+  background-image: url("/img/3page/worldview-popup.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

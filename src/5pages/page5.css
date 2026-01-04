@@ -7,7 +7,7 @@ li {
 }
 .main-bg5 {
   background: url("/img/5page/media-bg.jpg") center/cover no-repeat;
-  height: 100vh;
+  height: 100dvh;
   width: 100vw;
   display: flex;
   justify-content: center;

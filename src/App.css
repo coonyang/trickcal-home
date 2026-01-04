@@ -1,3 +1,9 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .mainBtn {
   position: fixed;
   top: 5%;
@@ -39,14 +45,17 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 300px;
-  height: 100vh;
+
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   transform: translateX(-150%);
   transition: transform 0.3s ease;
   z-index: 100;
+}
+.nav-img {
+  height: 100vh;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
 }
 .sidebar.open {
   transform: translateX(0);
@@ -54,7 +63,7 @@
 
 .closeBtn {
   position: absolute;
-  top: 50px;
+  top: 5%;
   right: 0;
   transform: translateX(50%);
   cursor: pointer;
@@ -64,9 +73,14 @@
   align-items: center;
   justify-content: center;
   background: none;
+  width: 30%;
 }
 .closeBtn:hover {
   opacity: 0.8;
+}
+.closeBtn > img {
+  width: 80%;
+  height: 80%;
 }
 .logo {
   position: absolute;
@@ -77,13 +91,13 @@
 }
 .menu {
   position: absolute;
-  top: 14%;
+  top: 16%;
   left: 11%;
   display: flex;
   flex-direction: column;
-  gap: 5%;
+  gap: 3%;
   width: 78%;
-  height: 40%;
+  height: 37%;
 }
 .menu li {
   width: 100%;
@@ -95,9 +109,9 @@
   position: absolute;
   display: flex;
   width: 71%;
-  height: 5%;
+  height: 4.5%;
   gap: 3%;
-  bottom: 15%;
+  bottom: 18%;
   left: 14%;
 }
 .sns a {
@@ -110,17 +124,17 @@
   position: absolute;
   cursor: pointer;
   width: 55%;
-  height: 5%;
+  height: 4.5%;
   left: 23%;
-  bottom: 7.2%;
+  bottom: 10%;
 }
 .apple {
   position: absolute;
   cursor: pointer;
   width: 55%;
-  height: 5%;
+  height: 4.5%;
   left: 23%;
-  bottom: 1.2%;
+  bottom: 5%;
 }
 @media (max-width: 768px) {
   .Btns {

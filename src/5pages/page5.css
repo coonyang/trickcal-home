@@ -128,8 +128,14 @@ li {
 @media (max-width: 768px) {
   .tab01-content {
     grid-template-columns: repeat(2, 1fr);
+    top: 13%;
+    height: 70%;
+    width: 90%;
   }
   .inner-tab-cont {
     grid-template-columns: repeat(1, 1fr);
+    top: 25%;
+    height: 70%;
+    width: 98%;
   }
 }

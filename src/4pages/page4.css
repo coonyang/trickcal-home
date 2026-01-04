@@ -109,3 +109,8 @@ li {
   width: 100%;
   flex: 1;
 }
+@media (max-width: 768px) {
+  .char-list > img {
+    width: 70%;
+  }
+}

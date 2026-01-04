@@ -99,15 +99,10 @@ function App() {
         </a>
       </div>
 
-      <div
-        className={`sidebar ${menuOpen ? "open" : ""}`}
-        style={{ backgroundImage: "url(img/nav.png)" }}
-      >
+      <div className={`sidebar ${menuOpen ? "open" : ""}`}>
+        <img className="nav-img" src="img/nav.png"></img>
         <button className="closeBtn" onClick={closeMenu}>
-          <img
-            src="img/nav-close.png"
-            style={{ width: "60px", height: "60px", display: "block" }}
-          ></img>
+          <img src="img/nav-close.png"></img>
         </button>
         <a
           className="logo"

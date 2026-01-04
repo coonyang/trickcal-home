@@ -7,6 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .scroll {
   position: absolute;
@@ -29,14 +30,14 @@
   }
 }
 .content {
-  position: relative;
-  margin-top: 500px;
+  position: absolute;
+  bottom: 10%;
 }
 .home-google {
   position: absolute;
 
-  width: 165px;
-  height: 50px;
+  width: 20%;
+  height: 12%;
   left: 30%;
   bottom: 27.5%;
 }
@@ -47,4 +48,9 @@
   height: 50px;
   bottom: 27.5%;
   left: 51.2%;
+}
+@media (max-width: 768px) {
+  .main-logo {
+    width: 100%;
+  }
 }

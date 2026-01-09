@@ -56,7 +56,7 @@ export default function Page3() {
       </div>
       {isOpen && (
         <div className="popup-bg" onClick={() => setIsOpen(false)}>
-          <div className="popup-inner">
+          <div className="popup-inner-3page">
             <iframe
               id="youtubePlayer"
               src="https://www.youtube.com/embed/O9OJ5_-Put8"

@@ -55,7 +55,7 @@ body {
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.5);
 }
-.popup-inner {
+.popup-inner-3page {
   position: relative;
   width: 60%;
   aspect-ratio: 16/9;

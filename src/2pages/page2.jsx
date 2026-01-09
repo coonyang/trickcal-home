@@ -104,7 +104,7 @@ export default function Page2() {
       </div>
       {isOpen && (
         <div className="popup-bg">
-          <div className="popup-inner">
+          <div className="popup-inner-2page">
             <img
               className="popup-top"
               src="img/2page/theater-popup-top.png"

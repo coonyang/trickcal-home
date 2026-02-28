@@ -1,15 +1,21 @@
-# React + Vite
+1. 프로젝트 요약
+- 목표: 특정 게임(트릭컬:Revive)의 공식 홈페이지를 React로 클론 코딩하여 UI/UX 재현율 100% 달성.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- 핵심 기능: fullpage.js를 활용한 섹션 기반 스크롤링, 반응형 레이아웃, 애니메이션 구현.
 
-Currently, two official plugins are available:
+2. 기술 스택 및 선택 이유
+- React & Vite: 빠른 빌드 속도와 컴포넌트 기반 개발을 위해 채택.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- fullpage.js: 공식 홈페이지 특유의 매끄러운 화면 전환 효과를 가장 안정적으로 구현하기 위해 사용.
 
-## Expanding the ESLint configuration
+3. 기술적 포인트
+- 디자인 아셋의 의도를 정확히 파악하여, 고화질 게임 리소스가 웹 환경에서 이질감 없이 동작하도록 UI 구성 요소와 인터랙션을 매칭하였습니다.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- fullpage.js와 연동된 애니메이션의 타이밍과 이벤트를 세밀하게 조정하여 원본과 동일한 사용자 경험(UX)을 재현했습니다.
+
+- 원본 페이지에서 발생하던 가변 해상도별 UI 깨짐 현상과 박스 모델의 콘텐츠 오버플로우(Overflow) 문제를 분석하고 수정하였습니다.
+
+- 다양한 뷰포트 크기에서도 UI 요소가 튀거나 비정상적으로 노출되지 않도록 레이아웃 알고리즘을 개선하여, 원본보다 더 안정적인 반응형 환경을 제공합니다.
 
 ## 안내
 

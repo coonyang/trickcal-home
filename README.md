@@ -1,3 +1,5 @@
+배포주소 : https://coonyang.github.io/trickcal-home/
+
 1. 프로젝트 요약
 - 목표: 특정 게임(트릭컬:Revive)의 공식 홈페이지를 React로 클론 코딩하여 UI/UX 재현율 100% 달성.
 

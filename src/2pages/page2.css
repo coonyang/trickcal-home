@@ -108,7 +108,7 @@ li {
   position: relative;
   width: 80%;
   aspect-ratio: 16/9;
-  background-image: url("img/2page/theater-popup.png");
+  background-image: url("/img/2page/theater-popup.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
